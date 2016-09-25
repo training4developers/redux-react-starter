@@ -1,4 +1,4 @@
 {
-	"watch": true,
-	"port": 3010
+	"watch": true, // json server will watch the underlying data file and reload as needed
+	"port": 3010 // run on this port, the default port is used by the web server
 }

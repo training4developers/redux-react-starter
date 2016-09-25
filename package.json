@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A TypeScript starter project for Redux and React applications.",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" \"npm run rest\" ",
-    "lite": "lite-server",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run web\" \"npm run rest\" ",
+    "web": "browser-sync start --server --files 'index.html' 'js' --no-inject-changes",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "rest": "json-server --config json-server.json db.json"
+    "rest": "json-server --watch --port 3010 db.json"
   },
   "keywords": [
     "redux",
@@ -18,9 +18,9 @@
   "author": "Eric W. Greene",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.16.0",
     "concurrently": "^2.2.0",
     "json-server": "^0.8.21",
-    "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
     "typings": "^1.4.0"
   },

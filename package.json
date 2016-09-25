@@ -4,7 +4,7 @@
   "description": "A TypeScript starter project for Redux and React applications.",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run web\" \"npm run rest\" ",
-    "web": "browser-sync start --server --files 'index.html' 'js' --no-inject-changes",
+    "web": "browser-sync start --server --files 'index.html' 'styles.css' 'js' --no-inject-changes",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",

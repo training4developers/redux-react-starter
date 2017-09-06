@@ -18,16 +18,16 @@
   "author": "Eric W. Greene",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "concurrently": "^2.2.0",
-    "json-server": "^0.8.21",
-    "typescript": "^2.0.3",
-    "typings": "^1.4.0"
+    "browser-sync": "2.16.0",
+    "concurrently": "2.2.0",
+    "json-server": "0.8.21",
+    "typescript": "2.0.3",
+    "typings": "1.4.0"
   },
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "redux": "^3.6.0",
-    "systemjs": "^0.19.38"
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "redux": "3.6.0",
+    "systemjs": "0.19.38"
   }
 }
